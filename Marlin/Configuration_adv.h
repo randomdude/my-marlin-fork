@@ -2854,7 +2854,7 @@
   #define USER_GCODE_2 "G91\nG0 X-44.3 Y-6.4 Z-4.22\nG90"
 
   #define USER_DESC_3 "Move zprobe to current nozzle pos"
-  #define USER_GCODE_2 "G91\nG0 X+44.3 Y+6.4 Z+4.22\nG90"
+  #define USER_GCODE_3 "G91\nG0 X+44.3 Y+6.4 Z+4.22\nG90"
 #endif
 
 /**
