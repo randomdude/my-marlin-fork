@@ -960,7 +960,7 @@
  
 // Aliz note: This is what I got by manually measuring the probe offsets. It *should* be pretty accurate.
 // Note that if you change this, you should also change the custom menus in Configuration_adv.h.
-#define NOZZLE_TO_PROBE_OFFSET { -44.3, -6.4, -4.22 }
+#define NOZZLE_TO_PROBE_OFFSET { -44.3, -6.4, -4.14 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1257,7 +1257,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 7
+  #define GRID_MAX_POINTS_X 3
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
