@@ -2846,15 +2846,15 @@
 #if ENABLED(CUSTOM_USER_MENUS)
   #define CUSTOM_USER_MENU_TITLE "Custom Commands"
 
-  #define USER_DESC_1 "Go to midpoint (X255 Y255)"
-  #define USER_GCODE_1 "G0 X255 Y255"
+  #define USER_DESC_1 "Go to XY midpoint"
+  #define USER_GCODE_1 "G90\nG0 X255 Y255"
 
   // This is hardcoded, ew.
   #define USER_DESC_2 "Move nozzle to current zprobe pos"
-  #define USER_GCODE_2 "G91 X-44.3 Y-6.4 Z-4.22"
+  #define USER_GCODE_2 "G91\nG0 X-44.3 Y-6.4 Z-4.22\nG90"
 
   #define USER_DESC_3 "Move zprobe to current nozzle pos"
-  #define USER_GCODE_3 "G91 X+44.3 Y+6.4 Z+4.22"
+  #define USER_GCODE_2 "G91\nG0 X+44.3 Y+6.4 Z+4.22\nG90"
 #endif
 
 /**
